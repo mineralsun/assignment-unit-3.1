@@ -9,11 +9,11 @@ console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
 let foodArray = ['cottage cheese', 'kettle corn', 'barbecue meats', 'cherry chocolate ice cream'];
-console.log('Some of my favorite foods are: ', foodArray);
+
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
-
+console.log('Some of my favorite foods are: ', foodArray);
 
 
 // 2. Array.length - tells you how many items are in the array
@@ -29,11 +29,11 @@ console.log('Number of foods:', foodArray.length);
 console.log('--- 3. Accessing items in an array ---');
 
 // Example: Log the first animal from the array using it's array index
-console.log('First animal is', animalArray[0])
+console.log('First animal is', animalArray[0]);
 
 // 3.a. TODO: Log the second animal in the array 
-console.log('Second animal is cat');
-
+console.log('Second animal is', animalArray[1]);
+//should I have just logged this entire statement as a string?^
 // 3.b. TODO: Log the last animal in the array using it's array index 
 console.log('Last animal is', animalArray[3]);
 
@@ -100,3 +100,5 @@ console.log('The foods are now', foodArray);
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let newArray = foodArray + animalArray;
+console.log(`The new array is: ${newArray}`);
